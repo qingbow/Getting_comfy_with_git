@@ -18,15 +18,18 @@ package axi_env_pkg;
    import sys_uvc_pkg::*;
    import axi_agent_pkg::*;
 
-   parameter BYTE_WIDTH=32;
-   parameter ADDR_WIDTH=64;
-   parameter ID_WIDTH=16;
-   parameter USER_WIDTH=4;
 
    `include "axi_cntrl_config.svh"
    `include "axi_env_config.svh"
    `include "axi_wrap_predictor.svh"
    `include "axi_env.svh"
 
+
+   parameter BYTE_WIDTH=32;
+   parameter ADDR_WIDTH=64;
+   parameter ID_WIDTH=16;
+   parameter USER_WIDTH=4;
+
+  
 endpackage
 `endif
