@@ -22,6 +22,13 @@ package axi_env_pkg;
    parameter ADDR_WIDTH=64;
    parameter ID_WIDTH=16;
    parameter USER_WIDTH=4;
+   parameter HOST_WIDTH=32;
+
+  typedef enum {
+                IDLE;
+                START;
+                FINISH;
+                } state_e;
 
    `include "axi_cntrl_config.svh"
    `include "axi_env_config.svh"
